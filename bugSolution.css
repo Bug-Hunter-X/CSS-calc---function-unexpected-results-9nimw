@@ -1,0 +1,14 @@
+To correct the issue, use parentheses to explicitly define the order of operations and ensure consistent units:
+
+```css
+/* Incorrect usage */
+width: calc(50% + 100px - 20px);
+
+/* Correct usage */
+width: calc((50% + 100px) - 20px);
+
+/* Or, for better clarity and maintainability */
+width: calc(50% + 80px);
+```
+
+In the corrected code, parentheses ensure the addition of 50% and 100px is performed before subtracting 20px. Using consistent units enhances readability and prevents unexpected calculations.  For more complex calculations, breaking them down into smaller, simpler parts is highly recommended for better maintainability.
